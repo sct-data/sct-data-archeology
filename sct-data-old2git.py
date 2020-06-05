@@ -370,31 +370,35 @@ def main():
 			}
 			payload = json.dumps({"tag_name": tag_name, "name": tag_name, "draft": False, "prerelease": False}).encode("utf-8")
 			req = urllib.request.Request(url, headers=headers, method="POST", data=payload)
-			with urllib.request.urlopen(req) as f:
-				if f.getcode() != 201:
-					raise RuntimeError("Ooops: %d / %s", f.getcode(), f.read())
-				ret = json.loads(f.read().decode('utf-8'))
-				logger.info("ret: %s", ret)
-				release_id = ret["id"]
+			try:
+				with urllib.request.urlopen(req) as f:
+					if f.getcode() != 201:
+						raise RuntimeError("Ooops: %d / %s", f.getcode(), f.read())
+					ret = json.loads(f.read().decode('utf-8'))
+					logger.info("ret: %s", ret)
+					release_id = ret["id"]
 
-			logger.info(" - Upload original archive as release asset")
+				logger.info(" - Upload original archive as release asset")
 
-			url = "https://uploads.github.com/repos/sct-data/{}/releases/{}/assets?name={}" \
-			 .format(key, release_id, archive_filename)
+				url = "https://uploads.github.com/repos/sct-data/{}/releases/{}/assets?name={}" \
+				 .format(key, release_id, archive_filename)
 
-			headers = {
-			 "Authorization": "token {}".format(GH_TOKEN),
-			 "Content-Type": "application/octet-stream",
-			}
+				headers = {
+				 "Authorization": "token {}".format(GH_TOKEN),
+				 "Content-Type": "application/octet-stream",
+				}
 
-			with io.open(archive_path, "rb") as fi:
-				payload = fi.read()
-			req = urllib.request.Request(url, headers=headers, method="POST", data=payload)
-			with urllib.request.urlopen(req) as f:
-				if f.getcode() != 201:
-					raise RuntimeError("Ooops: %d / %s", f.getcode(), f.read())
-				ret = json.loads(f.read().decode('utf-8'))
+				with io.open(archive_path, "rb") as fi:
+					payload = fi.read()
+				req = urllib.request.Request(url, headers=headers, method="POST", data=payload)
+				with urllib.request.urlopen(req) as f:
+					if f.getcode() != 201:
+						raise RuntimeError("Ooops: %d / %s", f.getcode(), f.read())
+					ret = json.loads(f.read().decode('utf-8'))
 
+			except urllib.error.HTTPError as e:
+				if e.code != 422:
+					raise
 
 if __name__ == "__main__":
 	res = main()
