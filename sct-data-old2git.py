@@ -272,7 +272,7 @@ def main():
 	cmd = ["git", "remote", "add", "origin", "git@github.com:sct-data/{}.git".format(key)]
 	subprocess.run(cmd, cwd=repo_path)
 
-	if 1:
+	if 0:
 		logger.info("- Delete repo")
 
 		url = "https://api.github.com/repos/sct-data/{}".format(key)
@@ -285,7 +285,7 @@ def main():
 			if f.getcode() != 204:
 				raise RuntimeError("Ooops: %d / %s", f.getcode(), f.read())
 
-	if 1:
+	if 0:
 		logger.info("- Create repo")
 
 		url = "https://api.github.com/orgs/sct-data/repos"
@@ -335,7 +335,12 @@ def main():
 		if m is None:
 			logger.exception("Can't guess revision from %s", archive_filename)
 
-		guessed_revision = m.group("date")
+		if archive_filename == "PAM50.zip":
+			guessed_revision = datetime.datetime.strptime(entry["commit"]["author_time"], "%Y-%m-%dT%H:%M:%SZ").strftime("%Y%m%d")
+		else:
+			guessed_revision = m.group("date")
+
+		logger.info(" Guessed revision: %s", guessed_revision)
 
 		msg = "Auto-generated tag from bundle name “{}”".format(archive_filename)
 		tag_name = "r{}".format(guessed_revision)
