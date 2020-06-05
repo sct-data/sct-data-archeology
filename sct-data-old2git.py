@@ -359,7 +359,7 @@ def main():
 		if m is None:
 			logger.exception("Can't guess revision from %s", archive_filename)
 
-		if entry["commit"]["id"] == "399c0a679264945e6c41fd7e80fd4d39320c21ff":
+		if entry["commit"].get("id") == "399c0a679264945e6c41fd7e80fd4d39320c21ff":
 			# Incorrect filename in download
 			guessed_revision = "20161128"
 		elif archive_filename in ("PAM50.zip", "MNI-Poly-AMU.zip", "sct_example_data.zip", "sct_testing_data.zip"):
