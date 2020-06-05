@@ -54,16 +54,19 @@ def archive_to_tree(repo, urls):
 			digests.add(h.digest())
 			logger.debug("%s -> %s size=%d h=%s", url, dst, os.path.getsize(dst), h.hexdigest())
 
-	if len(digests) == 0:
-		logger.warning("No data for %s", urls)
-		return
+	if urls == ["https://osf.io/6x5a2/?action=download"]:
+		path = archive_path = dst = "20200504_sct_testing_data.zip"
+	else:
+		if len(digests) == 0:
+			logger.warning("No data for %s", urls)
+			return
 
-	if len(digests) > 1:
-		logger.error("Inconsistent data in URLS %s", urls)
-		return
+		if len(digests) > 1:
+			logger.error("Inconsistent data in URLS %s", urls)
+			return
 
-	path = archive_path = dst
-	logger.info(" Using %s", path)
+		path = archive_path = dst
+		logger.info(" Using %s", path)
 
 	try:
 		filemime = xdg.Mime.get_type2(path)
@@ -96,18 +99,18 @@ def archive_to_tree(repo, urls):
 			if t.timestamp() > t_max:
 				t_max = t.timestamp()
 
-			if "/" in path:
+			if "/" in info.filename:
 				dirname, basename = info.filename.rsplit("/", 1)
 			else:
 				dirname, basename = "", info.filename
 
-			if basename == "":
-				logger.debug("  - tree %s", info.filename)
+			if info.filename.endswith("/"):
+				logger.debug("  - tree “%s”", info.filename)
 				tree = repo.TreeBuilder()
 				trees[info.filename[:-1]] = tree
 			else:
 				tree = trees[dirname]
-				logger.debug("  - blob %s", info.filename)
+				logger.debug("  - blob “%s”", info.filename)
 				data = z.read(info.filename)
 				blob_id = repo.create_blob(data)
 				tree.insert(basename, blob_id, pygit2.GIT_FILEMODE_BLOB)
@@ -334,8 +337,12 @@ def main():
 
 		msg = "Auto-generated commit for originally unversioned bundle"
 		msg += "\n\n"
-		msg += "SCT commit: {}\n".format(entry["commit"]["id"])
-		msg += "SCT commit message:\n{}\n".format(entry["commit"]["message"])
+		if "id" in entry["commit"]:
+			msg += "SCT commit: {}\n".format(entry["commit"]["id"])
+			msg += "SCT commit message:\n{}\n".format(entry["commit"]["message"])
+		else:
+			msg = entry["commit"]["message"]
+
 		c = repo.create_commit('refs/heads/master', author, committer, msg, tree, parents)
 
 		with io.open(archive_path + ".filename", "r", encoding="utf-8") as fi:
