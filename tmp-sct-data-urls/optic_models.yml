@@ -1,0 +1,15 @@
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2017-04-16T13:19:56Z'
+    commit_time: '2017-04-16T13:19:56Z'
+    id: 0e73804528d3727d9b45dce7b95296bec862dac5
+    message: 'Merge pull request #1253 from neuropoly/issue1249
+
+
+      Add OptiC for improved spinal cord detection
+
+
+      Former-commit-id: 54ef9282be1cd2407cedc151048f7b51352302ff'
+  urls:
+  - https://osf.io/g4fwn/?action=download

@@ -1,0 +1,18 @@
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2019-08-04T11:09:09Z'
+    commit_time: '2019-08-04T11:09:09Z'
+    id: 0321700268916a8d6610aed1e892c985a34a8bd1
+    message: "shell/sct_run_batch.sh: Added script to run batch files (#2386)\n\n\
+      * shell/sct_run_batch.sh: Added script to run batch files\r\n\r\nFixes #2329\r\
+      \n\r\n* sct_run_batch: Now display QC open command at the end\r\n\r\n* parameters_example.sh:\
+      \ Added example parameters.sh file\r\n\r\n* install_sct: Create symlinks for\
+      \ shell scripts\r\n\r\n* install_sct: sct_run_batch symlink is now without .sh\r\
+      \n\r\n* install_sct: Fixed ln, added chmod for shell/*\r\n\r\n* sct_download_data:\
+      \ Changed sct_course-beijing19 so it is removed\r\n\r\n... if it exists\r\n\r\
+      \n* unit_testing/test_deepseg_lesion.py: replace nan with zero\r\n\n\nFormer-commit-id:\
+      \ ad730ca5339a573e7bd2f73a68c64209222a51e9"
+  urls:
+  - https://osf.io/ef4xz/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20190802_sct_course-beijing19.zip

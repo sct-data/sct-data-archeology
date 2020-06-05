@@ -1,0 +1,33 @@
+- commit:
+    author_email: perone@users.noreply.github.com
+    author_name: Christian S. Perone
+    author_time: '2018-01-26T14:51:40Z'
+    commit_time: '2018-01-26T14:51:40Z'
+    id: dee9497155d08c0c43040234a6ce680892409e5a
+    message: "sct_deepseg_gm implementation (#1564)\n\nImplementation of the `sct_deepseg_gm`\
+      \ API and command-line tool.\r\n\r\nPaper reference:\r\nPerone, C. S., Calabrese,\
+      \ E., & Cohen-Adad, J. (2017). Spinal cord gray matter segmentation using deep\
+      \ dilated convolutions. Retrieved from http://arxiv.org/abs/1710.01269\r\n\r\
+      \nThis commit includes the following:\r\n\r\n- TensorFlow (1.3.0) and Keras\
+      \ integration into SCT;\r\n- sct_deepseg_gm models support for sct_download_data;\r\
+      \n- sct_deepseg_gm API;\r\n- sct_deepseg_gm command-line tool wrapping the API;\r\
+      \n- Integration testing for the command-line tool.\r\n\n\nFormer-commit-id:\
+      \ 43642a54aaf0c43cc8857169fe29158c3e1f09ee"
+  urls:
+  - https://osf.io/y8k2e/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20171126_deepgmseg_models.zip
+- commit:
+    author_email: perone@users.noreply.github.com
+    author_name: Christian S. Perone
+    author_time: '2018-02-06T05:37:14Z'
+    commit_time: '2018-02-06T05:37:14Z'
+    id: ee3f090fa77f53862f375bc843a7a9fc3b871bac
+    message: 'Fixing links to the models. (#1596)
+
+
+
+
+      Former-commit-id: 60b9b7c366521f852da20ae17a9bd8f10022d32e'
+  urls:
+  - https://osf.io/b9y4x/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20180205_deepseg_gm_models.zip

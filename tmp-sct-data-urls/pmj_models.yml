@@ -1,0 +1,25 @@
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2017-10-27T18:41:37Z'
+    commit_time: '2017-10-27T18:41:37Z'
+    id: 9227000062e97c386a5503e3f4d886316ba5185f
+    message: "Merge branch 'master' into jca-release\n\n* master: (43 commits)\n \
+      \ BUG: put back default value for labels (made batch_processing crash)\n  BUG:\
+      \ replaced run(mkdir) with python\u2019s makedirs\n  raise in sct.run in bad\
+      \ order. Also added specific sct errors (#1503)\n  Major refactoring of testing\
+      \ framework (#1453)\n  More improvements to the viewer (#1496)\n  DEV: add a\
+      \ line in the output excel that compute the percentage of a given tract occupied\
+      \ by lesionS: vol_lesionS_in_PAM50_04 / vol_PAM50_04_tot\n  BUG: fix errors\
+      \ in create_atlas.m (#1499)\n  Used the absolute path to create the temporary\
+      \ label file in propseg (#1487)\n  Option to install SCT in development mode\
+      \ (#1491)\n  Refactored WM atlas creation pipeline and improved documentation\
+      \  (#1492)\n  Updated bibliographic URL on ReadMe (#1489)\n  Fix a regression\
+      \ bug.\n  Added key bindings to the undo, save and help actions. (#1480)\n \
+      \ OPT: propseg: fixed issue 1484 (#1485)\n  Fixed global dependency in sct_process_segmentation\
+      \ call (#1481)\n  Introduced the zoom functionality to the anatomical canvas\
+      \ (#1477)\n  Poq issue 1409 log (#1411)\n  The minimal QT dialog  (#1379)\n\
+      \  Update README.md\n  download_data: forgot to add pmj_models in the -d flag\n\
+      \  ...\n\n\nFormer-commit-id: 393507c4975fed6153ed2887d3c339d0ffea1fb6"
+  urls:
+  - https://osf.io/4gufr/?action=download

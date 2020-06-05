@@ -1,0 +1,219 @@
+- commit:
+    parents: ["b6721962e2a1ec56ee169ccdd7bed34b5d710c72"]
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-07-25T02:13:43Z'
+    commit_time: '2016-07-25T02:13:43Z'
+    id: 6a21ecdd4b89882f45ea192fa677616ae25a77e8
+    message: 'Merge pull request #943 from neuropoly/jca_updateTestingData
+
+
+      jca_updateTestingData
+
+
+      Former-commit-id: 6e2da32ddb89e2704e6a9a30aff210eb636da6eb [formerly e44c89e5b655005a08bf277748d0dac2d6cba82a]
+
+      Former-commit-id: fcbbb69a7a449d0197336ef7d92831f8851867f7
+
+      Former-commit-id: 49bef5dcd48b8ea2586288188f33cb96efa16cfe'
+  urls:
+  - https://github.com/neuropoly/spinalcordtoolbox/releases/download/v3.0_beta17/sct_testing_data.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-09-12T16:45:54Z'
+    commit_time: '2016-09-12T16:45:54Z'
+    id: 73231f60cf581a25906f7463bd60e8b04d165559
+    message: 'OPT: download_data: updated path for gmseg_model and sct_testing_data
+
+
+      Former-commit-id: 1be80991b9c45cc0488b220ee8eadfe0fac010c0 [formerly 869946a5213159c787816838350c40fd3d2b61e4]
+
+      Former-commit-id: 29e27b52a55f190089d1b40cdfc59e83c0015e8e
+
+      Former-commit-id: 01bbca35f9e585e2478274fd14df7aa15ec3ceb6'
+  urls:
+  - https://github.com/neuropoly/spinalcordtoolbox/releases/download/v3.0_beta23/sct_testing_data.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-09-12T22:06:31Z'
+    commit_time: '2016-09-12T22:06:31Z'
+    id: ece036e398d2bb6d00cf986dd66348d77b53f9b1
+    message: 'BUG: set temporary links to gm_model and testing_data
+
+
+      Former-commit-id: 0c28a0fbeba355e082468d735ba6b410df91b202 [formerly e8b6591cfeca803a3818658b47cf4c83e86bc6f2]
+
+      Former-commit-id: ef37838172a6b278a9f9c7cdad8f880dccc8b14b
+
+      Former-commit-id: f6d5f900a3d703685636429cde45deaaebdeb9bf'
+  urls:
+  - https://dl.dropboxusercontent.com/u/20592661/sct/20160912/sct_testing_data.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-09-18T22:12:30Z'
+    commit_time: '2016-09-18T22:12:30Z'
+    id: 8e5cd11cd6c91535ecb09c158f194a9a00de155e
+    message: 'OPT: download_data: added sct_example_data to release
+
+
+      Former-commit-id: df4690c276bc5ec520de19d0e016c16bfc3ac1a2 [formerly ab2c34bc448dca73f3f4268d83fa47914271e7bc]
+
+      Former-commit-id: 9f27344476f416cf460d235856c57bd151c07ad9
+
+      Former-commit-id: 412fead62e7acb27b1a2cabc0ff115f2df65c48c'
+  urls:
+  - https://github.com/neuropoly/spinalcordtoolbox/releases/download/v3.0_beta23/sct_testing_data.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-09-23T17:06:14Z'
+    commit_time: '2016-09-23T17:06:14Z'
+    id: 65dcd9c6ae1cc5fdbb2a3884091991696a5272fb
+    message: "Merge branch 'master' of github.com:neuropoly/spinalcordtoolbox\n\n\
+      # By Sara Dupont (74) and others\n# Via Sara Dupont (21) and others\n* 'master'\
+      \ of github.com:neuropoly/spinalcordtoolbox: (87 commits)\n  NEW: use .json\
+      \ files to specify which data to use for testing\n  OPT: do not use z-regularization\
+      \ on 2D data\n  Update sct_download_data.py\n  REF: download_data: update URL\
+      \ for gm_model\n  OPT: correct binarization\n  OPT: no need to add path to -vertfile,\
+      \ it's done afterwards\n  Revert \"OPT: do not output qc when registering images\
+      \ with sct_segment_gm code\"\n  OPT: do not output qc when registering images\
+      \ with sct_segment_gm code\n  OPT: update param for pca according to loco results\n\
+      \  Fix WM shape issue\n  NEW: display error message when model is not compatible\
+      \ with code\n  OPT: correct testing\n  NEW: default param for -vertfile\n  Update\
+      \ testing with t2s\n  BUG: fixed issue in batch_processing\n  OPT: register_to_template:\
+      \ changed again default params\n  OPT: download_data/testing: removed system\
+      \ call\n  OPT: download_data: put temporary links to gm_model and sct_testing_data\n\
+      \  BUG: register_to_template: changed default param based on extensive validation\
+      \ on sct_testing/large\n  OPT: register_to_template: changed default param based\
+      \ on extensive validation on sct_testing/large\n  ...\n\nConflicts:\n\tcommit.txt\n\
+      \nFormer-commit-id: 816ff9be71ab022997d40b8652cc35f2c3fe5264 [formerly 3ff8437b56ad02e440e0ae24aa2ca971639192ec]\n\
+      Former-commit-id: bed403792471f4f8d5dc6d1898d4dbc3f96ef18f\nFormer-commit-id:\
+      \ d9908521065e809d4f809187f6b10fcd4f98a31d"
+  urls:
+  - https://dl.dropboxusercontent.com/u/20592661/sct/20160922/sct_testing_data.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-09-29T02:45:29Z'
+    commit_time: '2016-09-29T02:45:29Z'
+    id: c8fb74c7e1ea3744da01640068365f0c1697e18f
+    message: 'REF: download_data: updated links based on v3.0_beta23
+
+
+      Former-commit-id: 755d60778fe554111490ed1ab16290ef76f4be25 [formerly 93af8ecfb37c7ec42e79de8710a6d1a896a62a8f]
+
+      Former-commit-id: 268f8bd6322086af1b37b489aa8adbe5ce1e4624
+
+      Former-commit-id: 6adc24b5a077f54da352a801b93639e7e2d49afc'
+  urls:
+  - https://github.com/neuropoly/spinalcordtoolbox/releases/download/v3.0_beta23/sct_testing_data.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-11-23T16:09:29Z'
+    commit_time: '2016-11-23T16:09:29Z'
+    id: cfcaee9ef5b6f241696fb4fec5409a7954b3de35
+    message: 'Merge pull request #1040 from neuropoly/sl_process_seg_issue1037
+
+
+      Enhancement on sct_extract_metric + fix for sct_process_segmentation
+
+
+      Former-commit-id: 1eb0df929f023f27889bf85939fe4ccde7787dea [formerly fa7698aacd0c799e350ab926fed1bc5fec6d204f]
+
+      Former-commit-id: 61123e1c2b9ad894899caa759e216eea34537685
+
+      Former-commit-id: e00ac0d57f5e624c4f4ca50f64fd492fcf2f8c8f'
+  urls:
+  - https://dl.dropboxusercontent.com/u/20592661/sct/sct_testing_data.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-11-25T22:04:07Z'
+    commit_time: '2016-11-25T22:04:07Z'
+    id: 9a514410590bfcc06cd659b9107f331cd0853c28
+    message: 'DOC: sct_download_data: updated URL to point toward beta28
+
+
+      Former-commit-id: 73b9ec6c19e0b3a88181e89913e6b7f244d63fb6 [formerly 2f8b827b429850225018e6f5fb67b7fbf03ed8d2]
+
+      Former-commit-id: 9b832cadbc8bae6701c61fe71eb30b100331df3a
+
+      Former-commit-id: cfe068e93d316cf9dc67019e9d87acc631e7e082'
+  urls:
+  - https://github.com/neuropoly/spinalcordtoolbox/releases/download/v3.0_beta28/sct_testing_data_20161125.zip
+- commit:
+    author_email: peristeri@users.noreply.github.com
+    author_name: George
+    author_time: '2016-11-28T22:32:55Z'
+    commit_time: '2016-11-28T22:32:55Z'
+    id: 399c0a679264945e6c41fd7e80fd4d39320c21ff
+    message: 'Merge pull request #1052 from neuropoly/jca_use_osf
+
+
+      Download links now point to the OSF website https://osf.io
+
+
+      Former-commit-id: 379aeab56205d232c3639e9f2a67fe65cb2988c5 [formerly 0a8fcc8bef5ea49bb1dc499fb9f048b2ea126c01]
+
+      Former-commit-id: 5767320a9eb92dbe0c3b6b2338d10137404f31d3
+
+      Former-commit-id: 903b35135200cb7eda50df54e49fb48e192451a5'
+  urls:
+  - https://osf.io/uqcz5/?action=download
+- commit:
+    author_email: peristerakis@gmail.com
+    author_name: George
+    author_time: '2017-06-23T23:58:39Z'
+    commit_time: '2017-06-23T23:58:39Z'
+    id: ed730774df1d20853acd0435be168bf72845e51b
+    message: "Update sct testing data (#1370)\n\nIn some systems, the pip version\
+      \ of psutil is not properly installed. So far,\r\nconda's version is the most\
+      \ stable.\r\n\n\nFormer-commit-id: 33f010b1e11a8362b94523c32a10b547f0c6b146"
+  urls:
+  - https://osf.io/zrbs7/?action=download
+- commit:
+    author_email: perone@users.noreply.github.com
+    author_name: Christian S. Perone
+    author_time: '2018-01-26T14:51:40Z'
+    commit_time: '2018-01-26T14:51:40Z'
+    id: dee9497155d08c0c43040234a6ce680892409e5a
+    message: "sct_deepseg_gm implementation (#1564)\n\nImplementation of the `sct_deepseg_gm`\
+      \ API and command-line tool.\r\n\r\nPaper reference:\r\nPerone, C. S., Calabrese,\
+      \ E., & Cohen-Adad, J. (2017). Spinal cord gray matter segmentation using deep\
+      \ dilated convolutions. Retrieved from http://arxiv.org/abs/1710.01269\r\n\r\
+      \nThis commit includes the following:\r\n\r\n- TensorFlow (1.3.0) and Keras\
+      \ integration into SCT;\r\n- sct_deepseg_gm models support for sct_download_data;\r\
+      \n- sct_deepseg_gm API;\r\n- sct_deepseg_gm command-line tool wrapping the API;\r\
+      \n- Integration testing for the command-line tool.\r\n\n\nFormer-commit-id:\
+      \ 43642a54aaf0c43cc8857169fe29158c3e1f09ee"
+  urls:
+  - https://osf.io/z8gaj/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20180125_sct_testing_data.zip
+- commit:
+    author_email: charley.gros@gmail.com
+    author_name: charleygros
+    author_time: '2019-12-03T10:19:21Z'
+    commit_time: '2019-12-03T10:19:21Z'
+    id: 6cae82c8e7859f79ff3c77d33a73c2dc8b39ea0a
+    message: 'Merge pull request #2513 from neuropoly/cg/reg_spinal_level
+
+
+      Spinal-level-based registration to the PAM50
+
+
+      Former-commit-id: 9ad03c5e773a6963fb4c523740192d2e1f20f159'
+  urls:
+  - https://osf.io/yutrj/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20191031_sct_testing_data.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2020-05-04T10:19:21Z'
+    commit_time: '2020-05-04T10:19:21Z'
+    message: "Manual update (#1)"
+  urls:
+  - https://osf.io/6x5a2/?action=download

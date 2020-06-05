@@ -1,0 +1,12 @@
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2019-01-20T19:01:53Z'
+    commit_time: '2019-01-20T19:01:53Z'
+    id: 3c1b685cca74a50e8804c4e1168a2f886c840964
+    message: "Added OSF URL for london19 course (#2127)\n\n* sct_download_data: Added\
+      \ OSF URL for london19 course\r\n\r\n* sct_download_data: Added URL for London\
+      \ course\r\n\n\nFormer-commit-id: a3d58d15c4d5e8c98908ba860ee60682fddb14f3"
+  urls:
+  - https://osf.io/4q3u7/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20190121_sct_course-london19.zip

@@ -1,0 +1,56 @@
+- commit:
+    author_email: charley.gros@gmail.com
+    author_name: charleygros
+    author_time: '2018-01-29T14:46:53Z'
+    commit_time: '2018-01-29T14:46:53Z'
+    id: d7615bab36490aa34cd713968508e64ecb480ab1
+    message: 'Merge pull request #1586 from neuropoly/bdl_scdeepseg
+
+
+      sct_deepseg_sc implementation
+
+
+      Former-commit-id: 407479b0bd489ce800a6f37d9173792cefd8b5d0'
+  urls:
+  - https://osf.io/86phg/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20180125_deepseg_sc_models.zip
+- commit:
+    author_email: charley.gros@gmail.com
+    author_name: charleygros
+    author_time: '2018-02-14T06:26:31Z'
+    commit_time: '2018-02-14T06:26:31Z'
+    id: e28f875f0aad2c2becb49bae60e931142a493377
+    message: 'Update deepseg_sc folder --> Add README.txt (#1598)
+
+
+
+
+      Former-commit-id: ce85418fa1313899583f5b8aefe673d18f58ebd8'
+  urls:
+  - https://osf.io/mg8wr/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20180211_deepseg_sc_models.zip
+- commit:
+    author_email: charley.gros@gmail.com
+    author_name: charleygros
+    author_time: '2018-06-11T04:48:32Z'
+    commit_time: '2018-06-11T04:48:32Z'
+    id: 2af6779c573b41486db788a11e592234e7d4dd65
+    message: "Added CNN for centerline detection, brain detection and added possibility\
+      \ for 3d CNN kernel (#1822)\n\n* centerline detection either SVM either CNN\
+      \ + argument for brain or not brain section contained in the input image\r\n\
+      \r\n* add the nn_architecture for centerline detection\r\n\r\n* add param t2s\r\
+      \n\r\n* add t2s t1 dwi ctr parameters + speed in case of brain section + reduce\
+      \ bin threshold to avoid under segmentation\r\n\r\n* \"-brain\" more explicit\
+      \ than \"-no-brain\"\r\n\r\n* make -ctr description more explicit\r\n\r\n* kernel\
+      \ choice (2d or 3d) + bin the = 0.001 if t1 like else 0.5\r\n\r\n* add 3d architecture\r\
+      \n\r\n* add nyul normalization + allow 3d\r\n\r\n* integrate nyul standardization\r\
+      \n\r\n* arrange default params\r\n\r\n* code documentation\r\n\r\n* clean 3d\
+      \ architecture\r\n\r\n* add models on OSF\r\n\r\n* fix variable not defined\r\
+      \n\r\n* scripts/sct_deepseg_sc.py\r\n\r\n* recover inference pipeline of master\
+      \ for segment_2d\r\n\r\n* -ctr renamed in -centerline\r\n\r\n* update OSF link\r\
+      \n\r\n* add warning type to print\r\n\r\n* threshold updated\r\n\r\n* updated\
+      \ URLs for deepseg_sc models\r\n\r\n* changed default value for centerline flag\
+      \ with t2s: cnn->svm\r\n\n\nFormer-commit-id: 324589be1b9315c31cfc0248dbe0841f3659ac21"
+  urls:
+  - https://osf.io/avf97/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20180610_deepseg_sc_models.zip

@@ -1,0 +1,88 @@
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-07-16T15:45:32Z'
+    commit_time: '2016-07-16T15:45:32Z'
+    id: d2e8f234e9697fb4be2be502caeb9e36b900b8af
+    message: 'Merge pull request #935 from neuropoly/jca_PAM50_integration
+
+
+      jca_pam50_integration
+
+
+      Former-commit-id: e24e061b4d1042b1f24970abef4f1f0d60424b4c [formerly 913d3d1e4d15519fdb244a12971ab443cf7062d9]
+
+      Former-commit-id: 74b62f2b461913974881ecc879b4bd41772a4d87
+
+      Former-commit-id: 82a459826638d182916eece458f3f42522a0a53c'
+  urls:
+  - https://dl.dropboxusercontent.com/u/20592661/sct/MNI-Poly-AMU.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-07-16T17:02:53Z'
+    commit_time: '2016-07-16T17:02:53Z'
+    id: 3dc70583e85b989d5475f6deb098b6d5468b7bb6
+    message: 'Merge pull request #936 from neuropoly/jca_issue_927
+
+
+      jca_issue_927
+
+
+      Former-commit-id: 60ae84496ab37cd808ac7e1aedfe933e106d7520 [formerly 0a8be8eab4c8a29fda28a65c2f80910f0e7612ce]
+
+      Former-commit-id: e94595d5807c35c83696db926ec1d004ba2081a2
+
+      Former-commit-id: 0f26ee26ce009c98e4a8fc6b47c43fe655e2409d'
+  urls:
+  - https://github.com/neuropoly/spinalcordtoolbox/releases/download/v3.0_beta14/MNI-Poly-AMU.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-07-16T20:14:11Z'
+    commit_time: '2016-07-16T20:14:11Z'
+    id: 649e113bf266182ccd3bb5e30b40c7c2393f6381
+    message: 'BUG: updated link to binaries --> v3.0_beta16
+
+
+      Former-commit-id: 136ebac7aa3066f1ec26ef19013e87a162b28e5d [formerly 1a71936561feee6149b7ef87bd162bea67016860]
+
+      Former-commit-id: 1acf3a1153e963939e1ed71c2cad8dae3fadc7b6
+
+      Former-commit-id: bd5c5f8291a399d2fb8e1b6077f3363199ac1c21'
+  urls:
+  - https://github.com/neuropoly/spinalcordtoolbox/releases/download/v3.0_beta16/MNI-Poly-AMU.zip
+- commit:
+    author_email: peristeri@users.noreply.github.com
+    author_name: George
+    author_time: '2016-11-28T22:32:55Z'
+    commit_time: '2016-11-28T22:32:55Z'
+    id: 399c0a679264945e6c41fd7e80fd4d39320c21ff
+    message: 'Merge pull request #1052 from neuropoly/jca_use_osf
+
+
+      Download links now point to the OSF website https://osf.io
+
+
+      Former-commit-id: 379aeab56205d232c3639e9f2a67fe65cb2988c5 [formerly 0a8fcc8bef5ea49bb1dc499fb9f048b2ea126c01]
+
+      Former-commit-id: 5767320a9eb92dbe0c3b6b2338d10137404f31d3
+
+      Former-commit-id: 903b35135200cb7eda50df54e49fb48e192451a5'
+  urls:
+  - https://osf.io/b26vh/?action=download
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2017-03-13T18:40:23Z'
+    commit_time: '2017-03-13T18:40:23Z'
+    id: 999d09ead773a3d2e346bed8a1d0ddab5e8530c3
+    message: 'Merge pull request #1204 from neuropoly/new-release
+
+
+      Update the download URL for the MNI Poly AMU data
+
+
+      Former-commit-id: c6039746775232cfd3d5dbfbf89bff1be17de24d'
+  urls:
+  - https://osf.io/sh6h4/?action=download

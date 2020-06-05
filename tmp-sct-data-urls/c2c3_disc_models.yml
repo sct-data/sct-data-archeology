@@ -1,0 +1,119 @@
+- commit:
+    author_email: charley.gros@gmail.com
+    author_name: charleygros
+    author_time: '2018-12-06T03:03:33Z'
+    commit_time: '2018-12-06T03:03:33Z'
+    id: 8a8b8032d2b82f329c0986dd0595e0716dcf855f
+    message: "spinalcordtoolbox/vertebrae/detect_c2c3 -- New module (#2084)\n\n* add\
+      \ folder spinalcordtoolbox/vertebrae and script file detect_c2c3\r\n\r\n* integrate\
+      \ isct_spine_detect\r\n\r\n* add a function flatten_sagittal with matrices as\
+      \ input instead of filenames\r\n\r\n* detection pipeline for c2c3 disc\r\n\r\
+      \n* center label according cOm of seg\r\n\r\n* load model from data\r\n\r\n\
+      * add models to download data\r\n\r\n* init file\r\n\r\n* remove hard coded\
+      \ path used for prototyping\r\n\r\n* verbose=0 when running detector\r\n\r\n\
+      * explain how to train a model\r\n\r\n* use temporary folder for temporary files\r\
+      \n\r\n* add blank line at the end of the file\r\n\r\n* oups\r\n\r\n* do not\
+      \ raise exception\r\n\r\n* sct_label_vertebrae: Replaced automatic disc detection\r\
+      \n\r\nBy default, the function is now using the new detect_c2c3 spinalcordtoolbox\
+      \ function developed by @charleygros.\r\n\r\n* sct_label_vertebrae: Clean old\
+      \ comments\r\n\r\n* sct_label_vertebrae: Removed old c2c3 detection\r\n\r\n\
+      * sct_label_vertebrae: mention \"detect_c2c3\" Python module in the usage\r\n\
+      \r\n* detect_c2c3: add guidlines to retrain a model\r\n\r\n* detect_c2c3: add\
+      \ training pipeline\r\n\r\n* sct_download_data: add bin file for training SVM\
+      \ on OSF and miror\r\n\r\n* sct_download_data: add c2c3 models on OSF\r\n\r\n\
+      * config_file.py: Clarified doc for creating pickle\r\n\r\n* travis.yml: Now\
+      \ specifying Linux distro: 16.04\r\n\n\nFormer-commit-id: 86618462add7f06595a90f283b49227829607f80"
+  urls:
+  - https://osf.io/fk79z/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20181129_c2c3_disc_models.zip
+- commit:
+    author_email: charley.gros@gmail.com
+    author_name: charleygros
+    author_time: '2019-01-19T21:25:30Z'
+    commit_time: '2019-01-19T21:25:30Z'
+    id: 7543c8522adce0f89c92ad74f3009a2fe246f2fe
+    message: "detect_c2c3: improve postprocessing (#2103)\n\n* detect_c2c3: improvements\
+      \ -- postprocessing\r\n\r\n* keep clusters with correct margin\r\n\r\n* use\
+      \ normalised margin\r\n\r\n* use top of the segmentation as anatomical prior\r\
+      \n\r\n* dev/detect_c2c3/train: create qc, nb of sagittal slices avg\r\n\r\n\
+      * spinalcordtoolbox/vertebrae/detect_c2c3: avg 7 sag slices, remove hard coded\
+      \ post processing\r\n\r\n* Update README.md (#2118)\r\n\r\n* Expose aggregate_slicewise()\
+      \ API and various improvements (#2115)\r\n\r\n* sct_extract_metric: Created\
+      \ API: extract_metric\r\n\r\n* sct_extract_metric: Started refactoring to use\
+      \ aggregate_slicewise\r\n\r\n* aggregate_slicewise: Started refactoring for\
+      \ accommodating extract_metric\r\n\r\n- metrics is now ndarray (instead of list)\
+      \ to deal with >1 dim\r\n- added mask for computing weighted average, ml, etc.\r\
+      \n\r\n* sct_extract_metric,aggregate_slicewise: Main steps of working API\r\n\
+      \r\nsct_extract_metric now working (in specific scenario) with new APIs.\r\n\
+      \r\n* aggregate_slicewise,sct_extract_metric: Further improvements\r\n- Moved\
+      \ Metric() class inside aggregate_slicewise\r\n- Now display Mask in output\
+      \ csv\r\n- Now display func with metric name (for compatibility with process_seg\
+      \ module)\r\n\r\n* aggregate_slicewise: Changed variable name\r\n\r\n* process_seg:\
+      \ Adapted code to fit recent changes in aggregate_slicewise\r\n\r\n* msct_shape,process_seg:\
+      \ Adapted code to fit changes in aggregate_slicewise\r\n\r\nOther modifications:\r\
+      \n- drop features: incremental_length, distance_from_C1, vertebral_level\r\n\
+      \r\n* test_process_seg: Fixed broken compatibility with recent changes\r\n\r\
+      \n* sct_extract_metric,aggregate_slicewise: Refactored to generalize for ML\
+      \ and WA\r\n\r\nNotably introduced label_struc Class inside sct_extract_metric\
+      \ for simplicity\r\n\r\n* sct_extract_metric,aggregate_slicewise: Moved extract_metric\
+      \ inside aggregate_slicewise\r\n\r\nWill enable unit testing\r\n\r\n* aggregate_slicewise:\
+      \ Generalized to n-dim\r\n\r\nwas breaking compatibility with process_seg\r\n\
+      \r\n* test_aggregate_slicewise: Started to update tests with recent changes\r\
+      \n\r\n* aggregate_slicewise: Generalized to n-dim, added tests\r\n\r\n* test_aggregate_slicewise:\
+      \ All tests pass\r\n\r\n* test_aggregate_slicewise: Added test for csv\r\n\r\
+      \nTesting output of extract_metric()\r\nAlso fixed few issues in aggregate_slicewise.py\r\
+      \n\r\n* aggregate_slicewise: Fixed ordering of column in output csv\r\n\r\n\
+      All tests pass\r\n\r\n* aggregate_slicewise: Fixed issue with STD and ML method\r\
+      \n\r\n* aggregate_slicewise: Changed the way errors are raised\r\n\r\n* sct_extract_metric:\
+      \ Added field for appending to csv\r\n\r\n* utils: Fixed bug in parse_num_list_inv()\r\
+      \n\r\nNumber of chars to adapt based on int\r\n\r\n* aggregate_slicewise: Implemented\
+      \ method=bin and added test\r\n\r\n* sct_extract_metric: Dropped support for\
+      \ method=wath\r\n\r\nNot really used...\r\n\r\n* aggregate_slicewise: Implemented\
+      \ method=max\r\n\r\nAnd associated tests and wrapper\r\n\r\n* sct_process_segmentation:\
+      \ Fixed broken compatibility\r\n\r\n* msct_shape: Fixed bug when looping across\
+      \ slices\r\n\r\n* sct_extract_metric: Fixed undeclared variable\r\n\r\n* aggregate_slicewise:\
+      \ Removed weight in ML for faster estimate\r\n\r\nAlso started to implement\
+      \ MAP\r\n\r\n* sct_extract_metric: Changed default value for perslice\r\n\r\n\
+      * aggregate_slicewise: Implemented MAP (unfinished)\r\n\r\nneed to pass ml_clusters\
+      \ information to func_ml()\r\n\r\n* aggregate_slicewise: Refactored for compatibility\
+      \ with MAP\r\n\r\n* aggregate_slicewise: Fixed bug related to reshaping mask\r\
+      \n\r\nAlso added MAX in csv output\r\n\r\n* aggregate_slicewise: Fixed wrong\
+      \ indentation for try/except\r\n\r\n* aggregate_slicewise: Fixed duplicated\
+      \ dict key\r\n\r\n* aggregate_slicewise: Added check for non-finite values\r\
+      \n\r\n* test_sct_extract_metric: Updated test\r\n\r\n* aggregate_slicewise:\
+      \ Fixed bug introduced with checking for nonfinite\r\n\r\n* aggregate_slicewise:\
+      \ Fixed wrong reshape of array\r\n\r\n* batch_processing: Update with recent\
+      \ modifs in API\r\n\r\n* aggregate_slicewise,sct_process_segmentation: Added\
+      \ TODO\r\n\r\n* sct_process_segmentation,aggregate_slicewise: Changed default\r\
+      \n\r\nRegarding perslice and perlevel. To be closer to previous behaviour.\r\
+      \n\r\n* template: Now checking for inf in get_slices_from_vertebral_levels\r\
+      \n\r\n* sct_extract_metric: Few improvements\r\n\r\n- Display output file\r\n\
+      - Fixed default params\r\n\r\n* aggregate_slicewise: Created merge_dict() to\
+      \ deal with dict of dict\r\n\r\nUseful for sct_process_seg with several output\
+      \ metrics, to be able to concatenate them in a single csv\r\n\r\n* sct_process_segmentation:\
+      \ Now output all metrics in the same csv\r\n\r\nThere's still a bug to solve\
+      \ in merge_dict()\r\n\r\n* aggregate_slicewise: Fixed small bug in merge_dict\r\
+      \n\r\n* aggregate_slicewise: Now ordering metrics in a friendly way\r\n\r\n\
+      * test_aggregate_slicewise: Fixed bug caused by recent changes\r\n\r\n* aggregate_slicewise:\
+      \ Forgot to add CSA and Angle\r\n\r\n* batch_processing: Updated to match recent\
+      \ changes\r\n\r\n* sct_extract_metric: Fixed deprecated default method wath\r\
+      \n\r\n* test_sct_extract_metric: Updated ground truth value\r\n\r\n* batch_processing:\
+      \ Fixed verbose bug\r\n\r\n* spinalcordtoolbox/vertebrae/detect_c2c3: avg 7mm\
+      \ instead of 7slices\r\n\r\n* scripts/sct_download_data: update download link\
+      \ for c2c3 models\r\n\r\n* Output volume fraction on csv (#2122)\r\n\r\n* aggregate_slicewise:\
+      \ Removed VertLevel in agg_metric if not exist\r\n\r\n* aggregate_slicewise:\
+      \ Now display Label volume fraction\r\n\r\nFixes #2121\r\n\r\n* aggregate_slicewise:\
+      \ Fixed regression on detection nan\r\n\r\n* sct_extract_metric: Fixed bug with\
+      \ single mask as input\r\n\r\n* sct_extract_metric: Now display file name in\
+      \ Label column\r\n\r\n* test_aggregate_slicewise: Fixed unit test caused by\
+      \ recent changes\r\n\r\n* sct_label_vertebrae: Removed support for initc2 (#2125)\r\
+      \n\r\nUser can do sct_label_utils()\r\n\r\n* detect_c2c3: improvements -- postprocessing\r\
+      \n\r\n* keep clusters with correct margin\r\n\r\n* use normalised margin\r\n\
+      \r\n* use top of the segmentation as anatomical prior\r\n\r\n* dev/detect_c2c3/train:\
+      \ create qc, nb of sagittal slices avg\r\n\r\n* spinalcordtoolbox/vertebrae/detect_c2c3:\
+      \ avg 7 sag slices, remove hard coded post processing\r\n\r\n* spinalcordtoolbox/vertebrae/detect_c2c3:\
+      \ avg 7mm instead of 7slices\r\n\r\n* scripts/sct_download_data: update download\
+      \ link for c2c3 models\r\n\n\nFormer-commit-id: 9217ecef9175532189a2dc50e28ddf59a646c549"
+  urls:
+  - https://osf.io/t97ap/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20190117_c2c3_disc_models.zip

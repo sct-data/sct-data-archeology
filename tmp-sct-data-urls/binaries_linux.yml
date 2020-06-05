@@ -1,0 +1,62 @@
+- commit:
+    author_email: nguenthe@uwaterloo.ca
+    author_name: Nick Guenther
+    author_time: '2020-04-21T03:09:24Z'
+    commit_time: '2020-05-22T20:13:02Z'
+    id: 2631c9f001a21687f8d09a595179d6a1f56ab659
+    message: 'Normalize binaries'' package name.
+
+
+      Previously we treated linux as two kinds of beasts: Debian and CentOS 6.
+
+      But we conflated Debian with all other linuxes, so really it was "linux"
+
+      and "centos6".
+
+
+      Going forward, I want to do builds the way PyPI does with manylinux [1]:
+
+      the oldest CentOS is considered linux full stop. With my recent rebuild,
+
+      that is CentOS 7. Update the package name to emphasize this clearly.
+
+
+      I picked CentOS 7 because that''s the oldest version that ANTS will build
+
+      on, but I''m temporarily keeping a special case for CentOS 6 for the next
+
+      ~6 months until it end-of-lifes.
+
+
+      [1] https://github.com/pypa/manylinux
+
+      '
+  urls:
+  - https://osf.io/bt58d/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20190930_sct_binaries_linux.tar.gz
+- commit:
+    author_email: nguenthe@uwaterloo.ca
+    author_name: Nick Guenther
+    author_time: '2020-04-24T19:58:14Z'
+    commit_time: '2020-05-22T20:13:02Z'
+    id: 4dd7dbf4f2cc1c476e3963c8ad6fdc427a530222
+    message: 'Update ANTS binaries.
+
+
+      These binaries were built via a Github Workflow.
+
+      The Linux binaries were built on centos7, which is the oldest Linux that
+
+      ANTS will still compile on. The MacOS binaries were built on the Github
+
+      MacOS VMs.
+
+      The other binaries were copied unchanged from the previous binaries.
+
+
+      For full details see Github PR #2642 and Issue #2669.
+
+      '
+  urls:
+  - https://osf.io/mka78/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20200420_sct_binaries_linux.tar.gz

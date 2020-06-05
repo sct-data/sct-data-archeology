@@ -1,0 +1,15 @@
+- commit:
+    author_email: charley.gros@gmail.com
+    author_name: charleygros
+    author_time: '2018-07-12T16:08:02Z'
+    commit_time: '2018-07-12T16:08:02Z'
+    id: 2729d21a7694751380f95c386a8337d531d71de0
+    message: "New function: sct_deepseg_lesion (#1850)\n\n* first implementation of\
+      \ sct_deepseg_lesion\r\n\r\n* add t2_ax contrast + threshold\r\n\r\n* models\
+      \ on OSF and neuropoly\r\n\r\n* add comma in sct_download_data\r\n\r\n* add\
+      \ deep_lesion_models to the list to download\r\n\r\n* installer: added download\
+      \ of deepseg_lesion models\r\n\r\n* TEST: added deepseg_lesion\r\n\n\nFormer-commit-id:\
+      \ f4d917a91cd2834a8d9cf5ee43a1edb2c4d7de63"
+  urls:
+  - https://osf.io/eg7v9/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20180613_deepseg_lesion_models.zip

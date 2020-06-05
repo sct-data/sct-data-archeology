@@ -1,0 +1,136 @@
+- commit:
+    author_email: peristeri@users.noreply.github.com
+    author_name: George
+    author_time: '2017-01-30T22:58:40Z'
+    commit_time: '2017-01-30T22:58:40Z'
+    id: 4d2be822149c7dc395cb79d957cd9d2be92ea4aa
+    message: 'Merge pull request #1134 from neuropoly/download-data
+
+
+      Downloading the binaries using the python module instead of CURL
+
+
+      Former-commit-id: a035fc6b98258e6eab78c418719371bac5873269'
+  urls:
+  - https://osf.io/2pztn/?action=download
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2017-04-16T13:19:56Z'
+    commit_time: '2017-04-16T13:19:56Z'
+    id: 0e73804528d3727d9b45dce7b95296bec862dac5
+    message: 'Merge pull request #1253 from neuropoly/issue1249
+
+
+      Add OptiC for improved spinal cord detection
+
+
+      Former-commit-id: 54ef9282be1cd2407cedc151048f7b51352302ff'
+  urls:
+  - https://osf.io/a83jr/?action=download
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2017-10-27T18:41:37Z'
+    commit_time: '2017-10-27T18:41:37Z'
+    id: 9227000062e97c386a5503e3f4d886316ba5185f
+    message: "Merge branch 'master' into jca-release\n\n* master: (43 commits)\n \
+      \ BUG: put back default value for labels (made batch_processing crash)\n  BUG:\
+      \ replaced run(mkdir) with python\u2019s makedirs\n  raise in sct.run in bad\
+      \ order. Also added specific sct errors (#1503)\n  Major refactoring of testing\
+      \ framework (#1453)\n  More improvements to the viewer (#1496)\n  DEV: add a\
+      \ line in the output excel that compute the percentage of a given tract occupied\
+      \ by lesionS: vol_lesionS_in_PAM50_04 / vol_PAM50_04_tot\n  BUG: fix errors\
+      \ in create_atlas.m (#1499)\n  Used the absolute path to create the temporary\
+      \ label file in propseg (#1487)\n  Option to install SCT in development mode\
+      \ (#1491)\n  Refactored WM atlas creation pipeline and improved documentation\
+      \  (#1492)\n  Updated bibliographic URL on ReadMe (#1489)\n  Fix a regression\
+      \ bug.\n  Added key bindings to the undo, save and help actions. (#1480)\n \
+      \ OPT: propseg: fixed issue 1484 (#1485)\n  Fixed global dependency in sct_process_segmentation\
+      \ call (#1481)\n  Introduced the zoom functionality to the anatomical canvas\
+      \ (#1477)\n  Poq issue 1409 log (#1411)\n  The minimal QT dialog  (#1379)\n\
+      \  Update README.md\n  download_data: forgot to add pmj_models in the -d flag\n\
+      \  ...\n\n\nFormer-commit-id: 393507c4975fed6153ed2887d3c339d0ffea1fb6"
+  urls:
+  - https://osf.io/2egh5/?action=download
+- commit:
+    author_email: charley.gros@gmail.com
+    author_name: charleygros
+    author_time: '2018-12-06T03:03:33Z'
+    commit_time: '2018-12-06T03:03:33Z'
+    id: 8a8b8032d2b82f329c0986dd0595e0716dcf855f
+    message: "spinalcordtoolbox/vertebrae/detect_c2c3 -- New module (#2084)\n\n* add\
+      \ folder spinalcordtoolbox/vertebrae and script file detect_c2c3\r\n\r\n* integrate\
+      \ isct_spine_detect\r\n\r\n* add a function flatten_sagittal with matrices as\
+      \ input instead of filenames\r\n\r\n* detection pipeline for c2c3 disc\r\n\r\
+      \n* center label according cOm of seg\r\n\r\n* load model from data\r\n\r\n\
+      * add models to download data\r\n\r\n* init file\r\n\r\n* remove hard coded\
+      \ path used for prototyping\r\n\r\n* verbose=0 when running detector\r\n\r\n\
+      * explain how to train a model\r\n\r\n* use temporary folder for temporary files\r\
+      \n\r\n* add blank line at the end of the file\r\n\r\n* oups\r\n\r\n* do not\
+      \ raise exception\r\n\r\n* sct_label_vertebrae: Replaced automatic disc detection\r\
+      \n\r\nBy default, the function is now using the new detect_c2c3 spinalcordtoolbox\
+      \ function developed by @charleygros.\r\n\r\n* sct_label_vertebrae: Clean old\
+      \ comments\r\n\r\n* sct_label_vertebrae: Removed old c2c3 detection\r\n\r\n\
+      * sct_label_vertebrae: mention \"detect_c2c3\" Python module in the usage\r\n\
+      \r\n* detect_c2c3: add guidlines to retrain a model\r\n\r\n* detect_c2c3: add\
+      \ training pipeline\r\n\r\n* sct_download_data: add bin file for training SVM\
+      \ on OSF and miror\r\n\r\n* sct_download_data: add c2c3 models on OSF\r\n\r\n\
+      * config_file.py: Clarified doc for creating pickle\r\n\r\n* travis.yml: Now\
+      \ specifying Linux distro: 16.04\r\n\n\nFormer-commit-id: 86618462add7f06595a90f283b49227829607f80"
+  urls:
+  - https://osf.io/z72vn/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20181204_sct_binaries_linux.tar.gz
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2019-09-30T22:25:34Z'
+    commit_time: '2019-09-30T22:25:34Z'
+    id: 88e0d74d9914fa7b97f79f38676327c7077c96b2
+    message: "Improved CLI, fixed bug with the GUI and refactored into module (#2459)\n\
+      \n* sct_crop_image: Refactored cropping with GUI (WIP)\r\n\r\nNow using SCT's\
+      \ module: spinalcordtoolbox.gui.sagittal\r\nFixes #2458\r\n\r\n* sct_crop_image:\
+      \ Cleanup\r\n\r\n* sct_crop_image: Cleanup\r\n\r\n* sct_crop_image: Modify usage\
+      \ (WIP)\r\n\r\n* sct_crop_image: Refactored cropping with GUI (WIP)\r\n\r\n\
+      Now using SCT's module: spinalcordtoolbox.gui.sagittal\r\nFixes #2458\r\n\r\n\
+      * sct_crop_image: Cleanup\r\n\r\n* sct_crop_image: Cleanup\r\n\r\n* sct_crop_image:\
+      \ Made output filename optional\r\n\r\n* sct_crop_image: FIxed output filename\r\
+      \n\r\n* spinalcordtoolbox/cropping: Moved ImageCropper into python module\r\n\
+      \r\n* cropping: Replaced printv with logger, cleanup\r\n\r\n* sct_crop_image:\
+      \ Replaced cropping box param with ?min/?max\r\n\r\nWIP\r\nFixes #1818\r\n\r\
+      \n* cropping: Introduced class BoundingBox\r\n\r\n* cropping: Further work on\
+      \ get_voxel_bbox (WIP)\r\n\r\n* cropping: Replaced binary isct_crop_image with\
+      \ Python cropping\r\n\r\n* sct_crop_image: Fixed type of input params\r\n\r\n\
+      * cropping: Refactored to have several functions output bbox\r\n\r\n* cropping:\
+      \ Implemented get_bbox_from_mask()\r\n\r\n* sct_crop_image: Updated CLIs with\
+      \ recent changes in cropping\r\n\r\n* test_sct_crop_image: Updated test\r\n\r\
+      \n* sct_crop_image: Added entry for -ref option\r\n\r\n* resampling: Now accepting\
+      \ nibabel and Image object\r\n\r\n* resampling: Added 'mode' input parameter\r\
+      \n\r\n* cropping: Added get_bbox_from_ref()\r\n\r\n* sct_crop_image: Added entry\
+      \ for -ref option\r\n\r\n* test_sct_crop_image: Added testing for cropping with\
+      \ ref\r\n\r\n* cropping: Fixed origin\r\n\r\n* sct_crop_image: Improved CLI,\
+      \ save output there, display fsleyes syntax\r\n\r\n* cropping: Updated get_bbox_from_gui,\
+      \ few improvements\r\n\r\n* cropping: Cleanup\r\n\r\n* sct_crop_image: Cleanup,\
+      \ removed useless options\r\n\r\n* sct_crop_image: Added examples to usage\r\
+      \n\r\n* sct_crop_image: Clarified usage, prioritized cropping methods\r\n\r\n\
+      * cropping: Clarified GUI usage\r\n\r\n* sct_crop_image: Clarified usage\r\n\
+      \r\n* make_binaries.sh: Removed isct_crop_image binary generation\r\n\r\n* cropping:\
+      \ Removed useless input params\r\n\r\n* test_sct_crop_image: Updated integrity\
+      \ testing values\r\n\r\n* sct_apply_transfo: Updated with recent changes in\
+      \ ImageCropper\r\n\r\n* msct_gmseg_utils: Updated with recent changes in ImageCropper\r\
+      \n\r\n* sct_apply_transfo: Fixed if case typo\r\n\r\n* resampling: Fixed wrong\
+      \ type for nibabel\r\n\r\n* Fixed wrong input argument for nib_resampling()\r\
+      \n\r\n* Updated files with recent changes in sct_crop_image CLI\r\n\r\n* sct_detect_pmj:\
+      \ Fixed syntax for cropping image\r\n\r\n* sct_crop_image: Re-established flag\
+      \ -b because it is used elsewhere\r\n\r\n* Re-established sct_crop_image with\
+      \ flag -b\r\n\r\n* cropping: Fixed index error\r\n\r\n* sct_apply_transfo: Fixed\
+      \ wrongly commented line\r\n\r\n* cropping: get_bbox_from_ref() now checking\
+      \ dims for img_in and img_ref\r\n\r\n* cropping: Fixed wrong array assignment\r\
+      \n\r\n* cropping: Added useful verbose\r\n\r\n* test_sct_apply_transfo: Made\
+      \ test more sensitive\r\n\r\n* test_sct_apply_transfo: Now testing for 4D input\r\
+      \n\r\n* sct_apply_transfo: Fixed if cases\r\n\r\n* make_binaries.sh: removed\
+      \ isct_orientation3d\r\n\r\n* sct_download_data: Updated links to binaries\r\
+      \n\n\nFormer-commit-id: 91beb0badf165195caf63abb978a2902059884bc"
+  urls:
+  - https://osf.io/bt58d/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20190930_sct_binaries_linux.tar.gz

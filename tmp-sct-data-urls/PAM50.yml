@@ -1,0 +1,232 @@
+- commit:
+    author_email: simon.levy@mines-ales.org
+    author_name: "Simon Le\u0301vy"
+    author_time: '2015-11-27T20:01:21Z'
+    commit_time: '2015-11-27T20:01:21Z'
+    id: 9fbcb6b69c1fcd6130b0a3f14a30c74ffa426916
+    message: "Merge branch 'master' of https://github.com/neuropoly/spinalcordtoolbox\n\
+      \n# By Julien Cohen-Adad\n# Via Julien Cohen-Adad\n* 'master' of https://github.com/neuropoly/spinalcordtoolbox:\n\
+      \  REF: download_data: added PAM50\n\n\nFormer-commit-id: cd0b8af28f8552f91dc07a11d54d554cb0040117\
+      \ [formerly 57f672e9d02bf2c0f4ef707bc339047c71ebcaa6]\nFormer-commit-id: 6f1c9784184d6eed701642d88c82ec4ee84f0e9f\n\
+      Former-commit-id: dae146494289aeef685569f6eea2c4a27fa36f51"
+  urls:
+  - https://dl.dropboxusercontent.com/u/20592661/spinalcordtoolbox/PAM50.zip
+- commit:
+    author_email: duvaltanguy@gmail.com
+    author_name: Tanguy Duval
+    author_time: '2015-11-30T19:40:30Z'
+    commit_time: '2015-11-30T19:40:30Z'
+    id: e2d69733dc25d0ba0ae0ec54df1fea9ee311ef39
+    message: "Merge branch 'master' of https://github.com/neuropoly/spinalcordtoolbox\n\
+      \n# By Julien Cohen-Adad (13) and Simon L\xE9vy (1)\n# Via Simon L\xE9vy\n*\
+      \ 'master' of https://github.com/neuropoly/spinalcordtoolbox:\n  OPT: now get\
+      \ slices corresponding to vertebral levels based on the (fitted) centreline\
+      \ position\n  updated CHANGES.md\n  updated CHANGES.md\n  TEST: updated tests\n\
+      \  TEST: updated test_sct_register_to_template\n  REF: warp_template: cleaned\
+      \ code\n  updated batch_processing_PAM50\n  REF: register_to_template: make\
+      \ it compatible with other contrasts\n  OPT: register_to_template: fixed issue\
+      \ #681\n  updated batch_processing_PAM50\n  DEV: change_file_type: reduce file\
+      \ size and copy to PAM50 folder\n  new batch_processing_PAM50 for the new template\n\
+      \  BUG: download_data: fixed bug when renaming folders\n  REF: download_data:\
+      \ changed URL\n\n\nFormer-commit-id: 1b2275ad94f255a9d6ebae62adc52a85a3a23983\
+      \ [formerly 90040b52b7ce584d8d391b4a8986553c77358551]\nFormer-commit-id: 6dce408ad343ac4eba7291be1345a42f31e91354\n\
+      Former-commit-id: 1f2e2a58e84e378d9e50ad0bb272765254f0e1d2"
+  urls:
+  - https://dl.dropboxusercontent.com/u/20592661/sct/PAM50.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-07-16T17:02:53Z'
+    commit_time: '2016-07-16T17:02:53Z'
+    id: 3dc70583e85b989d5475f6deb098b6d5468b7bb6
+    message: 'Merge pull request #936 from neuropoly/jca_issue_927
+
+
+      jca_issue_927
+
+
+      Former-commit-id: 60ae84496ab37cd808ac7e1aedfe933e106d7520 [formerly 0a8be8eab4c8a29fda28a65c2f80910f0e7612ce]
+
+      Former-commit-id: e94595d5807c35c83696db926ec1d004ba2081a2
+
+      Former-commit-id: 0f26ee26ce009c98e4a8fc6b47c43fe655e2409d'
+  urls:
+  - https://github.com/neuropoly/spinalcordtoolbox/releases/download/v3.0_beta14/PAM50.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-07-16T20:14:11Z'
+    commit_time: '2016-07-16T20:14:11Z'
+    id: 649e113bf266182ccd3bb5e30b40c7c2393f6381
+    message: 'BUG: updated link to binaries --> v3.0_beta16
+
+
+      Former-commit-id: 136ebac7aa3066f1ec26ef19013e87a162b28e5d [formerly 1a71936561feee6149b7ef87bd162bea67016860]
+
+      Former-commit-id: 1acf3a1153e963939e1ed71c2cad8dae3fadc7b6
+
+      Former-commit-id: bd5c5f8291a399d2fb8e1b6077f3363199ac1c21'
+  urls:
+  - https://github.com/neuropoly/spinalcordtoolbox/releases/download/v3.0_beta16/PAM50.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-09-06T16:33:47Z'
+    commit_time: '2016-09-06T16:33:47Z'
+    id: 3bd045d3e37776c48dd88ed0d98ce0bf838b3edd
+    message: 'OPT: download_data: updated PAM50 (issue #968)
+
+
+      Former-commit-id: 8ce908cd02830c04532e0e35129e2e361270f662 [formerly be04acd52924344d89760111dbd7ca34dbbd11c8]
+
+      Former-commit-id: 9b95547c902e0dadb7a8c2558691ee2888f02f3b
+
+      Former-commit-id: 1284a9b09766916cd685c77bfdc3bb2f68c07a98'
+  urls:
+  - https://github.com/neuropoly/spinalcordtoolbox/releases/download/v3.0_beta21/PAM50.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-10-08T16:38:36Z'
+    commit_time: '2016-10-08T16:38:36Z'
+    id: 3f6e9d97b55b1dee837a29db45944bfad2f05bb6
+    message: 'OPT: download_data@info_label: changed T2* for T2S
+
+
+      Former-commit-id: 1983a70b73e6144cd08baeeb87a41664518d8846 [formerly 8784c37aa7849c800d5d8f86db6db77189851ad5]
+
+      Former-commit-id: 3f145f8693e03478bcbe186b6c5ea627b18aa822
+
+      Former-commit-id: 8975e1724e3690140b9fd1a990b6a9cfde8558b9'
+  urls:
+  - https://dl.dropboxusercontent.com/u/20592661/sct/20161008/PAM50.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-11-23T16:09:29Z'
+    commit_time: '2016-11-23T16:09:29Z'
+    id: cfcaee9ef5b6f241696fb4fec5409a7954b3de35
+    message: 'Merge pull request #1040 from neuropoly/sl_process_seg_issue1037
+
+
+      Enhancement on sct_extract_metric + fix for sct_process_segmentation
+
+
+      Former-commit-id: 1eb0df929f023f27889bf85939fe4ccde7787dea [formerly fa7698aacd0c799e350ab926fed1bc5fec6d204f]
+
+      Former-commit-id: 61123e1c2b9ad894899caa759e216eea34537685
+
+      Former-commit-id: e00ac0d57f5e624c4f4ca50f64fd492fcf2f8c8f'
+  urls:
+  - https://dl.dropboxusercontent.com/u/20592661/sct/PAM50_20161121.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-11-25T22:04:07Z'
+    commit_time: '2016-11-25T22:04:07Z'
+    id: 9a514410590bfcc06cd659b9107f331cd0853c28
+    message: 'DOC: sct_download_data: updated URL to point toward beta28
+
+
+      Former-commit-id: 73b9ec6c19e0b3a88181e89913e6b7f244d63fb6 [formerly 2f8b827b429850225018e6f5fb67b7fbf03ed8d2]
+
+      Former-commit-id: 9b832cadbc8bae6701c61fe71eb30b100331df3a
+
+      Former-commit-id: cfe068e93d316cf9dc67019e9d87acc631e7e082'
+  urls:
+  - https://github.com/neuropoly/spinalcordtoolbox/releases/download/v3.0_beta28/PAM50_20161121.zip
+- commit:
+    author_email: peristeri@users.noreply.github.com
+    author_name: George
+    author_time: '2016-11-28T22:32:55Z'
+    commit_time: '2016-11-28T22:32:55Z'
+    id: 399c0a679264945e6c41fd7e80fd4d39320c21ff
+    message: 'Merge pull request #1052 from neuropoly/jca_use_osf
+
+
+      Download links now point to the OSF website https://osf.io
+
+
+      Former-commit-id: 379aeab56205d232c3639e9f2a67fe65cb2988c5 [formerly 0a8fcc8bef5ea49bb1dc499fb9f048b2ea126c01]
+
+      Former-commit-id: 5767320a9eb92dbe0c3b6b2338d10137404f31d3
+
+      Former-commit-id: 903b35135200cb7eda50df54e49fb48e192451a5'
+  urls:
+  - https://osf.io/st8k4/?action=download
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2017-01-03T16:28:31Z'
+    commit_time: '2017-01-03T16:28:31Z'
+    id: 40b327eca589bef73ae616309548babde405f964
+    message: 'Merge pull request #1090 from neuropoly/jca_issue_411
+
+
+      Jca_issue_411
+
+
+      Former-commit-id: bda0234148ec4333128e5cdcf41d7229f371e297'
+  urls:
+  - https://osf.io/gdwn6/?action=download
+- commit:
+    author_email: benjamin.de-leener@polymtl.ca
+    author_name: Benjamin De Leener
+    author_time: '2018-05-12T11:24:16Z'
+    commit_time: '2018-05-12T11:24:16Z'
+    id: d171dacbc48049d3103eaaac7afbb8d01b8d50e2
+    message: 'Merge pull request #1669 from neuropoly/bdl_vertebralregistration
+
+
+      Improvements in straightening and registration to the template
+
+
+      Former-commit-id: 9c5d53d6fd5b18802bafc771c6e8e4c5faaf7ee9'
+  urls:
+  - https://osf.io/xz7jk/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20180410_PAM50.zip
+- commit:
+    author_email: cJ-tub@zougloub.eu
+    author_name: "J\xE9r\xF4me Carretero"
+    author_time: '2018-08-14T04:35:25Z'
+    commit_time: '2018-08-14T04:35:25Z'
+    id: d01d62bbd80f05a56c3b20be315148d25d4d7dbf
+    message: 'Merge pull request #1997 from neuropoly/jca/1995-atlas
+
+
+      Updated URL for PAM50
+
+
+      Former-commit-id: 53187cf96ac3bc5e39b5fcec48d5a8d292d2435b'
+  urls:
+  - https://osf.io/jmfpw/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20180813_PAM50.zip
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2018-12-17T14:19:50Z'
+    commit_time: '2018-12-17T14:19:50Z'
+    id: 8cc38c9f17c7f1b15bdb1325f43166ea20e71003
+    message: "Updated PAM50 template header to be in the same coordinate system as\
+      \ the MNI template (#2102)\n\n* sct_download_data: Updated PAM50 link on mirror2\r\
+      \n\r\nFixes 2085\r\n\r\n* sct_download_data: Updated PAM50 link on mirror1\r\
+      \n\n\nFormer-commit-id: f53b46be7b7549e32385bf04df7742dea4cbc8da"
+  urls:
+  - https://osf.io/kc3jx/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20181214_PAM50.zip
+- commit:
+    author_email: charley.gros@gmail.com
+    author_name: charleygros
+    author_time: '2019-12-03T10:19:21Z'
+    commit_time: '2019-12-03T10:19:21Z'
+    id: 6cae82c8e7859f79ff3c77d33a73c2dc8b39ea0a
+    message: 'Merge pull request #2513 from neuropoly/cg/reg_spinal_level
+
+
+      Spinal-level-based registration to the PAM50
+
+
+      Former-commit-id: 9ad03c5e773a6963fb4c523740192d2e1f20f159'
+  urls:
+  - https://osf.io/u79sr/?pid=6zbyf/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20191029_PAM50.zip

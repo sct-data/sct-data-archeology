@@ -1,0 +1,11 @@
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2019-08-02T22:39:19Z'
+    commit_time: '2019-08-02T22:39:19Z'
+    id: cef8da53f813c8b2f4c3205f4413e06b9f30a53e
+    message: "Added Beijing course (#2384)\n\n* sct_download_data: Added Beijing course\r\
+      \n\r\n* README.md: Added link to Beijing course\r\n\n\nFormer-commit-id: eb12d2e7f47efd83f4f689161f17b13a620e7dc8"
+  urls:
+  - https://osf.io/ef4xz/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20190802_sct_course-beijing19.zip

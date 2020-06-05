@@ -1,0 +1,67 @@
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2016-09-18T22:12:30Z'
+    commit_time: '2016-09-18T22:12:30Z'
+    parents: ["4b6fcd6fe7a4b92f2559ff3a3dd039cfed8fb135"]
+    id: 8e5cd11cd6c91535ecb09c158f194a9a00de155e
+    message: 'OPT: download_data: added sct_example_data to release
+
+
+      Former-commit-id: df4690c276bc5ec520de19d0e016c16bfc3ac1a2 [formerly ab2c34bc448dca73f3f4268d83fa47914271e7bc]
+
+      Former-commit-id: 9f27344476f416cf460d235856c57bd151c07ad9
+
+      Former-commit-id: 412fead62e7acb27b1a2cabc0ff115f2df65c48c'
+  urls:
+  - https://github.com/neuropoly/spinalcordtoolbox/releases/download/v3.0_beta23/sct_example_data.zip
+- commit:
+    author_email: peristeri@users.noreply.github.com
+    author_name: George
+    author_time: '2016-11-28T22:32:55Z'
+    commit_time: '2016-11-28T22:32:55Z'
+    id: 399c0a679264945e6c41fd7e80fd4d39320c21ff
+    message: 'Merge pull request #1052 from neuropoly/jca_use_osf
+
+
+      Download links now point to the OSF website https://osf.io
+
+
+      Former-commit-id: 379aeab56205d232c3639e9f2a67fe65cb2988c5 [formerly 0a8fcc8bef5ea49bb1dc499fb9f048b2ea126c01]
+
+      Former-commit-id: 5767320a9eb92dbe0c3b6b2338d10137404f31d3
+
+      Former-commit-id: 903b35135200cb7eda50df54e49fb48e192451a5'
+  urls:
+  - https://osf.io/feuef/?action=download
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2017-03-14T18:03:32Z'
+    commit_time: '2017-03-14T18:03:32Z'
+    id: 73ca3795bcb271721551eb92920b7562563c2931
+    message: 'Merge pull request #1171 from neuropoly/jca_newExampleData
+
+
+      New sct_example_data and batch_processing
+
+
+      Former-commit-id: ee8bf0fd4f2da8f7d10f5799530bd1fca7302b29'
+  urls:
+  - https://osf.io/4nnk3/?action=download
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2018-05-27T00:38:28Z'
+    commit_time: '2018-05-27T00:38:28Z'
+    id: 7076e65daae225c5a7cdc2078e82a0e80523294f
+    message: "Updated batch_processing and sct_example_data with new features (#1779)\n\
+      \n* Updated batch_processing\r\n\r\n* batch_processing: added fmri section,\
+      \ other improvements\r\n\r\n* finalized batch_processing with new dataset\r\n\
+      \r\n* few fixes\r\n\r\n* FIxed unassigned variable #1775 (#1776)\r\n\r\n* minor\
+      \ fix (that has major consequence)\r\n\r\n* Moved procedure to wiki: https://github.com/neuropoly/spinalcordtoolbox/wiki/Adding-data-&-binaries\r\
+      \n\r\n* updated URL\r\n\r\n* fixed wrong file name\r\n\r\n* fixed part related\
+      \ to gm-based registration\r\n\n\nFormer-commit-id: ff8db373998952e4d48b3d3823ae2c6611df53ea"
+  urls:
+  - https://osf.io/kjcgs/?action=download
+  - https://www.neuro.polymtl.ca/_media/downloads/sct/20180525_sct_example_data.zip

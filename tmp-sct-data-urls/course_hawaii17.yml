@@ -1,0 +1,14 @@
+- commit:
+    author_email: jcohen@polymtl.ca
+    author_name: Julien Cohen-Adad
+    author_time: '2017-04-25T23:13:40Z'
+    commit_time: '2017-04-25T23:13:40Z'
+    id: 7296d246c6ff09c6e0ecc0829e5f951aa24e8353
+    message: 'OPT: download_data: added link to course_hawaii17 (#1291)
+
+
+
+
+      Former-commit-id: 2aa02b2c95ad8e5b45ffd300574a17f0b70b38e5'
+  urls:
+  - https://osf.io/6exht/?action=download
