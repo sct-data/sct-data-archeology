@@ -286,7 +286,7 @@ def main():
 			if f.getcode() != 204:
 				raise RuntimeError("Ooops: %d / %s", f.getcode(), f.read())
 
-	if 0:
+	try:
 		logger.info("- Create repo")
 
 		url = "https://api.github.com/orgs/sct-data/repos"
@@ -303,6 +303,9 @@ def main():
 				raise RuntimeError("Ooops: %d / %s", f.getcode(), f.read())
 			ret = json.loads(f.read().decode('utf-8'))
 			logger.info("Repo creation sez: %s", ret)
+	except urllib.error.HTTPError as e:
+		if e.code != 422:
+			raise
 
 	with io.open(args.config, "r", encoding="utf-8") as fi:
 		root = yaml.safe_load(fi)
@@ -344,7 +347,7 @@ def main():
 		if entry["commit"]["id"] == "399c0a679264945e6c41fd7e80fd4d39320c21ff":
 			# Incorrect filename in download
 			guessed_revision = "20161128"
-		elif archive_filename == "PAM50.zip":
+		elif archive_filename in ("PAM50.zip", "MNI-Poly-AMU.zip"):
 			guessed_revision = datetime.datetime.strptime(entry["commit"]["author_time"], "%Y-%m-%dT%H:%M:%SZ").strftime("%Y%m%d")
 			logger.info(" Guessed revision from commit date: %s", guessed_revision)
 		else:
