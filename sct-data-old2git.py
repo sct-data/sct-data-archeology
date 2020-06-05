@@ -344,6 +344,8 @@ def main():
 
 		if archive_filename.startswith("PAM50_"):
 			m = re.match(r"^PAM50_(?P<date>\d{8})\.zip$", archive_filename)
+		elif archive_filename.startswith("sct_testing_data_"):
+			m = re.match(r"^sct_testing_data_(?P<date>\d{8})\.zip$", archive_filename)
 		else:
 			m = re.match(r"^(?P<date>\d{8})_.*$", archive_filename)
 
@@ -353,7 +355,7 @@ def main():
 		if entry["commit"]["id"] == "399c0a679264945e6c41fd7e80fd4d39320c21ff":
 			# Incorrect filename in download
 			guessed_revision = "20161128"
-		elif archive_filename in ("PAM50.zip", "MNI-Poly-AMU.zip", "sct_example_data.zip"):
+		elif archive_filename in ("PAM50.zip", "MNI-Poly-AMU.zip", "sct_example_data.zip", "sct_testing_data.zip"):
 			guessed_revision = datetime.datetime.strptime(entry["commit"]["author_time"], "%Y-%m-%dT%H:%M:%SZ").strftime("%Y%m%d")
 			logger.info(" Guessed revision from commit date: %s", guessed_revision)
 		else:
