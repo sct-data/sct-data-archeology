@@ -312,7 +312,8 @@ def main():
 
 	parents = []
 
-	for entry in root:
+	for idx_entry, entry in enumerate(root):
+
 		res = archive_to_tree(repo, entry["urls"])
 		if res is None:
 			# no data
@@ -323,6 +324,11 @@ def main():
 		author_time = int(t_max)
 		author = pygit2.Signature(author_name, author_email, author_time)
 		committer = author
+
+		if "parents" in entry["commit"]:
+			parents = [pygit2.Oid(raw=bytes.fromhex(x)) for x in entry["commit"]["parents"]]
+			repo.references.delete("refs/heads/master")
+			repo.references.create("refs/heads/master", parents[0])
 
 		logger.info("- %s", entry["commit"]["author_time"])
 
@@ -347,7 +353,7 @@ def main():
 		if entry["commit"]["id"] == "399c0a679264945e6c41fd7e80fd4d39320c21ff":
 			# Incorrect filename in download
 			guessed_revision = "20161128"
-		elif archive_filename in ("PAM50.zip", "MNI-Poly-AMU.zip"):
+		elif archive_filename in ("PAM50.zip", "MNI-Poly-AMU.zip", "sct_example_data.zip"):
 			guessed_revision = datetime.datetime.strptime(entry["commit"]["author_time"], "%Y-%m-%dT%H:%M:%SZ").strftime("%Y%m%d")
 			logger.info(" Guessed revision from commit date: %s", guessed_revision)
 		else:
