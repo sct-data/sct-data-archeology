@@ -10,6 +10,7 @@ import ast
 import multiprocessing
 import subprocess
 import urllib.request
+import urllib.error
 import hashlib
 
 import pygit2
@@ -331,16 +332,24 @@ def main():
 		with io.open(archive_path + ".filename", "r", encoding="utf-8") as fi:
 			archive_filename = fi.read()
 
-		m = re.match(r"^(?P<date>\d{8})_.*$", archive_filename)
+
+		if archive_filename.startswith("PAM50_"):
+			m = re.match(r"^PAM50_(?P<date>\d{8})\.zip$", archive_filename)
+		else:
+			m = re.match(r"^(?P<date>\d{8})_.*$", archive_filename)
+
 		if m is None:
 			logger.exception("Can't guess revision from %s", archive_filename)
 
-		if archive_filename == "PAM50.zip":
+		if entry["commit"]["id"] == "399c0a679264945e6c41fd7e80fd4d39320c21ff":
+			# Incorrect filename in download
+			guessed_revision = "20161128"
+		elif archive_filename == "PAM50.zip":
 			guessed_revision = datetime.datetime.strptime(entry["commit"]["author_time"], "%Y-%m-%dT%H:%M:%SZ").strftime("%Y%m%d")
+			logger.info(" Guessed revision from commit date: %s", guessed_revision)
 		else:
 			guessed_revision = m.group("date")
-
-		logger.info(" Guessed revision: %s", guessed_revision)
+			logger.info(" Guessed revision from archive name: %s (%s)", guessed_revision, archive_filename)
 
 		msg = "Auto-generated tag from bundle name “{}”".format(archive_filename)
 		tag_name = "r{}".format(guessed_revision)
